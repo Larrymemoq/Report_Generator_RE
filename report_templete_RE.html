@@ -1,0 +1,1192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><!--REPORT_TEMPLATE_VERSION EN 1.0-->
+<html>
+<head>
+    <title>Reporte Rassini Electronics</title>
+    <style>
+        html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+   </style>
+
+    <!--CSS for helper styles-->
+    <style>
+        * {
+            /* The width and height properties include the content, padding, and border, but do not include the margin.*/
+            box-sizing: border-box;
+            /* Debug */
+            /*border: dotted 1px #ff00ff;*/
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .column-10 {
+            float: left;
+            width: 10%;
+        }
+
+        .column-20 {
+            float: left;
+            width: 20%;
+        }
+
+        .column-25 {
+            float: left;
+            width: 25%;
+        }
+
+        .column-30 {
+            float: left;
+            width: 30%;
+        }
+
+        .column-33 {
+            float: left;
+            width: 33.333%;
+        }
+
+        .column-40 {
+            float: left;
+            width: 40%;
+        }
+
+        .column-50 {
+            float: left;
+            width: 50%;
+        }
+
+        .column-60 {
+            float: left;
+            width: 60%;
+        }
+
+        .column-66 {
+            float: left;
+            width: 66.666%;
+        }
+
+        .column-70 {
+            float: left;
+            width: 70%;
+        }
+
+        .column-75 {
+            float: left;
+            width: 75%;
+        }
+
+        .column-80 {
+            float: left;
+            width: 80%;
+        }
+
+        .column-90 {
+            float: left;
+            width: 90%;
+        }
+
+        .column-100 {
+            float: left;
+            width: 100%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <!--CSS for nav class' -->
+    <style type="text/css">
+        .navbar {
+            background-color: #0ba6df;
+            border-radius: 3px;
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+
+            margin-top: 20px;
+            margin-right: 0px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+        }
+
+        .navbar-button {
+            background-color: #cef0fd;
+
+            border-color: #5C409B;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 3px;
+
+            padding-top: 5px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+
+            margin-top: 0px;
+            margin-right: 5px;
+            margin-bottom: 0px;
+            margin-left: 5px;
+        }
+
+        .navbar-button__caption {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            padding-top: 6px;
+            padding-right: 0px;
+            padding-bottom: 3px;
+            padding-left: 0px;
+        }
+
+        /* Handle changes required for better printing */
+        @media print {
+            .navbar {
+                display: none;
+            }
+        }
+    </style>
+
+    <!--CSS for testflow-report class' -->
+    <style type="text/css">
+        .testflow-report {
+            font-size: 10pt;
+            font-family: tahoma;
+            color: #434343;
+            /* Make the report a maximum width and center it in the browser */
+            max-width: 800px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+
+            padding-top: 1px;
+            padding-right: 1px;
+            padding-bottom: 1px;
+            padding-left: 1px;
+
+            background-color: #583F99;
+            border-color: #583F99;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 5px;
+        }
+
+        .testflow-report pre,
+        .testflow-report textarea,
+        .testflow-report label,
+        .testflow-report input[type=text] {
+            font-family: Tahoma;
+            font-size: 8pt;
+            color: #434343;
+
+            margin-top: 2px;
+            margin-right: 0px;
+            margin-bottom: 2px;
+            margin-left: 0px;
+        }
+
+
+        .testflow-report__header {
+            overflow: hidden;
+            background-color: #ffffff;
+            border-radius: 0px 0px 3px 3px;
+
+
+        }
+
+        .testflow-report__title {
+            text-align: center;
+            font-size: 24pt;
+            font-weight: bold;
+
+            margin-top: 20px;
+            margin-right: 0px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+        }
+
+        .testflow-report__footer {
+            font-size: 12pt;
+            font-weight: bold;
+            text-align: center;
+
+            background-color: #ffffff;
+            color: #434343;
+            clear: both;
+            border-radius: 0px 0px 3px 3px;
+
+            padding-top: 10px;
+            padding-right: 0px;
+            padding-bottom: 10px;
+            padding-left: 0px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .testflow-report__watermark {
+			text-align: center;
+			color: #0ba6df;
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .testflow-report-details {
+            /* Apply a border to the left and right */
+            border-color: #A499CA;
+            border-width: 5px;
+            border-style:  solid;
+            border-radius: 5px;
+
+            background-color: #ffffff;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .testflow-report-details__header {
+            font-size: 10pt;
+            font-weight: bold;
+            text-align: left;
+            text-transform: uppercase;
+
+            background-color: #ffffff;
+            color: #434343;
+
+            padding-top: 5px;
+            padding-right: 2px;
+            padding-bottom: 5px;
+            padding-left: 2px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .testflow-report-details__content {
+            overflow: auto;
+            max-height: 500px;
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .testflow-report-details__content img {
+            width: 100%;
+            height: 374px;
+            display: flex;
+            vertical-align: middle;
+            align-content: center;
+            align-items: flex-end;
+            border-color: #081f3f;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 1px;
+        }
+
+        .testflow-report-details__footer {
+            text-align: center;
+            text-transform: uppercase;
+
+            background-color: #ffffff;
+            color: #ffffff;
+
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            clear: both;
+        }
+
+        /* Handle changes required for better printing */
+        @media print {
+            .testflow-report {
+                background-color: transparent;
+                border-width: 1px;
+            }
+
+            .testflow-report__header {
+                background-image: none;
+                background-color: transparent;
+            }
+        }
+    </style>
+
+    <!--CSS for testflow-step class' -->
+    <style type="text/css">
+        .testflow-step {
+            /* Apply a border to the left and right */
+            border-color: #005cb8;
+            border-width: 5px;
+            border-style: none solid;
+            border-radius: 5px;
+
+            background-color: #b3d9ff;
+
+            /* Sepertate steps vertically */
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 50px;
+            margin-left: 0px;
+        }
+
+        .testflow-step.Fail {
+            border-color: #dc143c;
+            background-color: #f08080;
+        }
+
+        .testflow-step.Pass {
+            border-color: #228b22;
+            background-color: #90ee90;
+        }
+
+        .testflow-step__header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+
+            font-size: 12pt;
+            font-weight: bold;
+            text-align: left;
+            text-transform: uppercase;
+
+            background-color: #005cb8;
+            color: #ffffff;
+
+            padding-top: 10px;
+            padding-right: 0px;
+            padding-bottom: 10px;
+            padding-left: 0px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .testflow-step.Fail .testflow-step__header {
+            background-color: #dc143c;
+        }
+
+        .testflow-step.Pass .testflow-step__header {
+            background-color: #228b22;
+        }
+
+        .testflow-step__content {
+            overflow: auto;
+            max-height: 1000px;
+
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .testflow-step__footer {
+            text-align: center;
+            text-transform: uppercase;
+
+            background-color: #005cb8;
+            color: #ffffff;
+
+            padding-top: 2px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 0px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            clear: both;
+        }
+
+        .testflow-step.Fail .testflow-step__footer {
+            background-color: #dc143c;
+        }
+
+        .testflow-step.Pass .testflow-step__footer {
+            background-color: #228b22;
+        }
+
+        /* Handle changes required for better printing */
+        @media print {
+            .testflow-step {
+                page-break-inside: avoid;
+                background-color: transparent;
+                margin-bottom: 10px;
+            }
+
+            .testflow-step.Fail {
+                background-color: transparent;
+            }
+
+            .testflow-step.Pass {
+                background-color: transparent;
+            }
+        }
+    </style>
+
+    <!--CSS for testflow-entry class' -->
+    <style type="text/css">
+        .testflow-entry {
+            /* Apply a border to the left and right */
+            border-color: #081f3f;
+            border-width: 2px;
+            border-style: none solid;
+            border-radius: 1px;
+
+            background-color: #b3d9ff;
+
+            margin-top: 10px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+
+        .testflow-entry__header {
+            font-size: 10pt;
+            font-weight: bold;
+            text-align: left;
+            text-transform: uppercase;
+
+            background-color: #081f3f;
+            color: #ffffff;
+
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .testflow-entry__content {
+            overflow: auto;
+            max-height: 500px;
+
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .testflow-entry__footer {
+            text-align: center;
+            text-transform: uppercase;
+
+            background-color: #081f3f;
+            color: #ffffff;
+
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            clear: both;
+        }
+
+        /* Handle changes required for better printing */
+        @media print {
+            .testflow-entry {
+                page-break-inside: avoid;
+                background-color: transparent;
+            }
+
+            .testflow-entry__content {
+                max-height: none;
+            }
+        }
+    </style>
+
+	<!--CSS for lists-->
+	<style>
+	ul.no-bullets {
+	  list-style-type: none;
+	  padding: 0; /* Remove padding */
+	  margin: 0; /* Remove margins */
+	}
+	</style>
+
+    <!--CSS for all tables -->
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            overflow: auto;
+            width: 100%;
+        }
+
+        th {
+            text-align: center;
+
+            border-color: #081f3f;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 0px;
+
+            background-color: #0ba6df;
+            color: #ffffff;
+        }
+
+        td {
+            text-align: center;
+
+            border-color: #081f3f;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 0px;
+
+            padding-top: 1px;
+            padding-right: 5px;
+            padding-bottom: 1px;
+            padding-left: 5px;
+        }
+
+        td img {
+            vertical-align: middle;
+        }
+
+        tr {
+            background-color: #cef0fd;
+            color: #081f3f;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e7f7fe;
+        }
+
+        tr.Fail {
+            font-size: 1.25em;
+            background-color: #dc143c;
+            color: #ffffff;
+        }
+    </style>
+
+    <!--CSS for ic-data class'-->
+    <style>
+        /* Just use the default table style for now */
+        /*table.ic-data {
+
+        }*/
+    </style>
+
+    <!--CSS for logic-data class'-->
+    <style>
+        /* Overrride the default style for the name column, to make it sitcky */
+        table.logic-data tr td.pin-name {
+            position: -webkit-sticky;
+            position: sticky;
+            left: 0;
+            background-color: #cef0fd;
+        }
+
+        table.logic-data tr:nth-child(even) td.pin-name {
+            background-color: #e7f7fe;
+        }
+
+        /* Overrride the default style for the trace column, to left align it */
+        table.logic-data tr td.pin-logic-trace {
+            text-align: left;
+            padding-left: 0px;
+        }
+
+        /* Handle changes required for better printing */
+        @media print {
+            table.logic-data tr td.pin-name {
+                position: static;
+                left: auto;
+            }
+        }
+    </style>
+
+    <style type="text/css">
+        /* vi-channel is a container for vi-captures, which displays horizontally */
+        .vi-channel {
+            float: left;
+            width: 50%;
+            min-width: 240px;
+
+            border-color: #081f3f;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 1px;
+
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .vi-channel.Fail {
+            border-color: #dc143c;
+        }
+
+        .vi-channel__header {
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: #0ba6df;
+            color: #081f3f;
+
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .vi-channel.Fail .vi-channel__header {
+            background-color: #dc143c;
+            color: #ffffff;
+        }
+
+        .vi-channel__content {
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+
+            padding-top: 5px;
+            padding-right: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+        }
+
+        .vi-channel__content .vi-capture {
+            width: 75%;
+            float: none;
+            display: inline-block;
+        }
+
+        .vi-channel__footer {
+            text-align: center;
+            text-transform: uppercase;
+
+            background-color: #0ba6df;
+            color: #081f3f;
+
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .vi-channel.Fail .vi-channel__footer {
+            background-color: #dc143c;
+            color: #ffffff;
+        }
+
+        .vi-capture {
+            float: left;
+            width: 25%;
+			      max-width: 240px;
+            min-width: 120px;
+
+            border-color: #081f3f;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 1px;
+
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .vi-capture.Fail {
+            border-color: #dc143c;
+        }
+
+        .vi-capture img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .vi-capture__header {
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: #0ba6df;
+            color: #081f3f;
+
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .vi-capture.Fail .vi-capture__header {
+            background-color: #dc143c;
+            color: #ffffff;
+        }
+
+        .vi-capture__footer {
+            text-align: center;
+            text-transform: uppercase;
+
+            background-color: #0ba6df;
+            color: #081f3f;
+
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .vi-capture.Fail .vi-capture__footer {
+            background-color: #dc143c;
+            color: #ffffff;
+        }
+    </style>
+    <style type="text/css">
+        .instrument-capture {
+            border-color: #0ba6df;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 1px;
+
+            background-color: #ffffff;
+
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .instrument-capture__content img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .instrument-capture__header {
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: #0ba6df;
+            color: #081f3f;
+
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .instrument-capture__footer {
+            text-align: center;
+            text-transform: uppercase;
+
+            background-color: #0ba6df;
+            color: #081f3f;
+
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+    </style>
+    <style type="text/css">
+        /* Slide/toggle switch
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 22px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 22px;
+
+            background-color: #081f3f;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 4px;
+            bottom: 4px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #fae100;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(18px);
+            -ms-transform: translateX(18px);
+            transform: translateX(18px);
+        }
+    </style>
+    <script>
+        // Handle the header image being clicked
+        function handleHeaderImgDblClick(imageID) {
+            // Redirect the click to the file input
+            document.getElementById('select_header_image_file').click();
+        };
+        function handleEquipmentImgDblClick(imageID) {
+            // Redirect the click to the file input
+            document.getElementById('select_equipment_image_file').click();
+        };
+        function handleRecordImgDblClick(imageID) {
+              // Redirect the click to the file input
+              document.getElementById('select_record_image_file').click();
+          };
+          function handleEndImgDblClick(imageID) {
+                // Redirect the click to the file input
+                document.getElementById('select_end_image_file').click();
+            };
+
+        // Handle the file conversion to base64
+        function handleHeaderImgSelect(evt) {
+            // Check for the File API support.
+            if (window.File && window.FileReader && window.FileList && window.Blob) {
+
+                var f = evt.target.files[0]; // FileList object
+                var reader = new FileReader();
+                // Closure to capture the file information.
+                reader.onload = (function (theFile) {
+                    return function (e) {
+                        // Replace the header image with the given file
+                        document.getElementById('header_image').src = e.target.result;
+                    };
+                })(f);
+
+                // Read in the image file as a data URL.
+                reader.readAsDataURL(f);
+            } else {
+                // Not supported in this browser
+                alert('The File APIs are not fully supported in this browser.');
+            }
+        }
+        function handleEquipmentImgSelect(evt) {
+            if (window.File && window.FileReader && window.FileList && window.Blob) {
+
+                var f = evt.target.files[0]; // FileList object
+                var reader = new FileReader();
+                // Closure to capture the file information.
+                reader.onload = (function (theFile) {
+                    return function (e) {
+                        // Replace the equipment image with the given file
+                        document.getElementById('equipment_image').src = e.target.result;
+                    };
+                })(f);
+
+                // Read in the image file as a data URL.
+                reader.readAsDataURL(f);
+            } else {
+                // Not supported in this browser
+                alert('The File APIs are not fully supported in this browser.');
+            }
+        }
+        function handleRecordImgSelect(evt) {
+            if (window.File && window.FileReader && window.FileList && window.Blob) {
+
+                var f = evt.target.files[0]; // FileList object
+                var reader = new FileReader();
+                // Closure to capture the file information.
+                reader.onload = (function (theFile) {
+                    return function (e) {
+                        // Replace the equipment image with the given file
+                        document.getElementById('record_image').src = e.target.result;
+                    };
+                })(f);
+
+                // Read in the image file as a data URL.
+                reader.readAsDataURL(f);
+            } else {
+                // Not supported in this browser
+                alert('The File APIs are not fully supported in this browser.');
+            }
+        }
+        function handleEndImgSelect(evt) {
+            if (window.File && window.FileReader && window.FileList && window.Blob) {
+
+                var f = evt.target.files[0]; // FileList object
+                var reader = new FileReader();
+                // Closure to capture the file information.
+                reader.onload = (function (theFile) {
+                    return function (e) {
+                        // Replace the equipment image with the given file
+                        document.getElementById('end_image').src = e.target.result;
+                    };
+                })(f);
+
+                // Read in the image file as a data URL.
+                reader.readAsDataURL(f);
+            } else {
+                // Not supported in this browser
+                alert('The File APIs are not fully supported in this browser.');
+            }
+        }
+        function printFunction() {
+                window.print();
+              }
+    </script>
+</head>
+<body>
+    <div class="testflow-report">
+        <div class="testflow-report__header">
+            <div> <!--imagen header tittle-->
+               <img id="header_image"  src="header.jpg">
+            </div>
+            <div class="testflow-report__title">
+
+            </div>
+            <br></br>
+            <div class="testflow-report-details">
+                <div class="testflow-report-details__header">
+                    Detalles de Reporte
+                </div>
+                <div class="row">
+                    <div class="testflow-report-details__content column-50">
+                        <div class="row">
+                            <label class="column-30"> Encargado</label><input class="column-70" type="text"
+                                value="">
+                        </div>
+                        <div class="row">
+                            <label class="column-30"> Modulo  </label><input class="column-70" type="text"
+                                value="">
+                        </div>
+                        <div class="row">
+                            <label class="column-30"> Fecha </label><input class="column-70" type="text"
+                                value="">
+                        </div>
+                        <div class="row">
+                            <label class="column-30"> Linea / operacion  </label><input class="column-70" type="text"
+                                value="">
+                        </div>
+                    </div>
+                    <div class="testflow-report-details__content column-50">
+                        <div class="row">
+                            <label class="column-20">Comentarios</label>
+                            <textarea style="height:100px;"
+                                class="column-80"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="testflow-report-details__footer"></div>
+            </div>
+            <br></br>
+            <div class="testflow-report-details">
+                <div class="testflow-report-details__header">Equipo bajo Prueba </div>
+                <div class="row">
+                    <div class="testflow-report-details__content column-60">
+                        <input type="file" id="select_equipment_image_file" onchange="handleEquipmentImgSelect(event)"
+                            accept=".png, .jpg, .jpeg, .bmp" style="display: none;" />
+                        <img id="equipment_image" ondblclick="handleEquipmentImgDblClick()"
+                            alt="DOUBLE CLICK TO ADD IMAGE (Use external browser)" src="">
+                    </div>
+                    <div class="testflow-report-details__content column-40">
+                        <div class="row">
+                            <label class="column-40">Marca</label>
+                            <input class="column-60" type="text"  value="" style="height: 22px; width: 297px;">
+                        </div>
+                        <div class="row">
+                            <label class="column-40">Planta</label>
+                            <input class="column-60" type="text" value="" style="height: 22px; width: 297px;">
+                        </div>
+                        <div class="row">
+                            <label class="column-40">Numero de Parte</label>
+                            <input class="column-60" type="text" value="" style="height: 22px; width: 297px;">
+                        </div>
+                        <div class="row">
+                            <label class="column-40">Orden de Trabajo</label>
+                            <input class="column-60" type="text"  value="" style="height: 22px; width: 297px;">
+                        </div>
+                        <div class="row">
+                            <label class="column-40">RE</label>
+                            <input class="column-60" type="text"  value="" style="height: 22px; width: 297px;">
+                        </div>
+                        <div class="row">
+                            <label class="column-40">Cliente</label>
+                            <input class="column-60" type="text"  value="" style="height: 22px; width: 297px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="testflow-report-details__footer"></div>
+            </div>
+            <br></br>
+            <div class="testflow-report-details">
+                <div class="testflow-report-details__header"> Antecedentes </div>
+                <div class="row">
+                    <div class="testflow-report-details__content column-50">
+                      <div class="row">
+                          <label class="column-20">Modulo </label>
+                          <textarea style="height: 89px; width: 377px;"
+                              class="column-80"></textarea>
+                      </div>
+                    </div>
+                    <div class="testflow-report-details__content column-50">
+                      <div class="row">
+                          <label class="column-20">Problema</label>
+                          <textarea style="height: 89px; width: 377px;"
+                              class="column-80"></textarea>
+                      </div>
+                    </div>
+                </div>
+               <div class="testflow-report-details__footer"></div>
+            </div>
+            <br></br>
+            <div class="testflow-report-details">
+                <div class="testflow-report-details__header">Diagnostico </div>
+                <div class="row">
+                    <div class="testflow-report-details__content column-50">
+                        <input type="file" id="select_record_image_file" onchange="handleRecordImgSelect(event)"
+                            accept=".png, .jpg, .jpeg, .bmp" style="display: none;" />
+                        <img id="record_image" ondblclick="handleRecordImgDblClick()"
+                            alt="DOUBLE CLICK TO ADD IMAGE (Use external browser)" src="">
+                    </div>
+                    <div class="testflow-report-details__content column-50">
+                      <div class="row">
+                          <label class="column-20">Descripción </label>
+                          <textarea style="height: 355px; width: 363px;"
+                              class="column-80"></textarea>
+                      </div>
+                    </div>
+                </div>
+                <div class="testflow-report-details__footer"></div>
+            </div>
+            <br></br>
+            <div class="testflow-report-details">
+                <div class="testflow-report-details__header">Conclusion  </div>
+                <div class="row">
+                    <div class="testflow-report-details__content column-50">
+                        <input type="file" id="select_end_image_file" onchange="handleEndImgSelect(event)"
+                            accept=".png, .jpg, .jpeg, .bmp" style="display: none;" />
+                        <img id="end_image" ondblclick="handleEndImgDblClick()"
+                            alt="DOUBLE CLICK TO ADD IMAGE (Use external browser)" src="">
+                    </div>
+                    <div class="testflow-report-details__content column-50">
+                      <div class="row">
+                          <label class="column-20">Prueba </label>
+                          <textarea style="height: 160px;width: 373px;"
+                              class="column-80"></textarea>
+                      </div>
+                      <div class="row">
+                          <label class="column-20">Conclusion </label>
+                          <textarea style="height: 160px;width: 373px;"
+                              class="column-80"></textarea>
+                      </div>
+                    </div>
+                </div>
+                <div class="testflow-report-details__footer"></div>
+            </div>
+
+        </div>
+        </div>
+        <div class="testflow-report__footer" onclick="printFunction()">
+            Fin del Reporte
+       </div>
+    </div>
+</body>
+<script language="Javascript1.4">
+    // Apply the default step filters
+  //  ApplyStepFilter();
+</script>
+
+</html>
